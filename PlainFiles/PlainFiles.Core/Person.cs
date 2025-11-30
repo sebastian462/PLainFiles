@@ -8,10 +8,20 @@ namespace PlainFiles.Core
 {
     public class Person
     {
-        public int Id { get; set; }
-        public string Name { get; set; } = string.Empty;
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string LastName { get; set; }
+        public string Phone { get; set; }
+        public decimal Balance { get; set; }
 
-        public int Age { get; set; } 
-
+        public Person(int id, string name, string lastName, string phone, decimal balance)
+        {
+            ID = id;
+            Name = name;
+            LastName = lastName;
+            Phone = phone;
+            Balance = balance;
+        }
     }
+
 }
